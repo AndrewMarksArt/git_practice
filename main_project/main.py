@@ -1,3 +1,5 @@
-print("hello world! We switched to development branch,"
-      " then created a feature branch, then updated files"
-      " and finally merged that featuer to development and then main")
+from product import Product
+
+catalog = Product.instantiate_from_csv()
+
+print(catalog)
