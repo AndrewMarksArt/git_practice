@@ -25,12 +25,12 @@ class Product:
 
     @classmethod
     def instantiate_from_csv(cls):
-        with open("products.csv", 'r') as f:
+        with open("./products.csv", 'r') as f:
             reader = csv.DictReader(f)
             products = list(reader)
         for product in products:
             Product(
-                name=product.get("name"),
-                price=product.get("price"),
-                quantity=product.get("quantity")
+                name=product.get('name'),
+                price=float(product.get('price')),
+                quantity=int(product.get('quantity'))
             )

@@ -1,5 +1,5 @@
 from product import Product
 
-catalog = Product.instantiate_from_csv()
+Product.instantiate_from_csv()
 
-print(catalog)
+print(Product.product_catalog)
