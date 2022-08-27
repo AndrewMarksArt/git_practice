@@ -33,3 +33,6 @@ class Product:
                 price=float(product.get('price')),
                 quantity=int(product.get('quantity'))
             )
+
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__} ('{self.name}', '{self.price}', '{self.quantity}')"
