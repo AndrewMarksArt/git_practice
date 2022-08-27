@@ -1,1 +1,5 @@
-print("hello world! now we're working on feature_1 on a branch of development")
+from product import Product
+
+catalog = Product.instantiate_from_csv()
+
+print(catalog)
