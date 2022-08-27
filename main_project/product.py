@@ -1,3 +1,6 @@
+import csv
+
+
 class Product:
 
     # class variable 'product-catalog' will hold all instances of Product
@@ -19,3 +22,15 @@ class Product:
 
         # append to catalog
         Product.product_catalog.append(self)
+
+    @classmethod
+    def instantiate_from_csv(cls):
+        with open('products.csv', 'r') as f:
+            reader = csv.DictReader(f)
+            products = list(reader)
+        for product in products:
+            Product(
+                name=product.get("name")
+                price=product.get("price")
+                quantity=product.get("quantity")
+            )
