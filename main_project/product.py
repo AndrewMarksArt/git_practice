@@ -10,10 +10,9 @@ class Product:
     # then append to catalog
     def __init__(self, name: str, price: float, quantity=0) -> None:
         # there must be a price greater than 0
-        # assert price > 0, f"Price is {price} and must be greater than 0"
+        assert price > 0, f"Price is {price} and must be greater than 0"
         # default for quantity is 0, must be greater than or equal to 0
-        # assert quantity >= 0, f"Quantity is {quantity} and must an int be " \
-        #   "greater than or equal to 0"
+        assert quantity >= 0, f"Quantity is {quantity} and must an int be greater than or equal to 0"
 
         # set instance name, price, and quantity
         self.name = name
