@@ -1,7 +1,7 @@
 import math
 
 
-class Rectangle():
+class Rectangle:
     def __init__(self, width, length) -> None:
         self.width = width
         self.length = length
@@ -17,7 +17,7 @@ class Rectangle():
         self.length = length
 
 
-class Circle():
+class Circle:
     def __init__(self, radius) -> None:
         self.radius = radius
 
@@ -25,7 +25,7 @@ class Circle():
         return math.pi * self.radius ** 2
 
 
-class Triangle():
+class Triangle:
     def __init__(self, height, base) -> None:
         self.height = height
         self.base = base
@@ -34,7 +34,7 @@ class Triangle():
         return (self.base * self.height) / 2
 
 
-class Hexagon():
+class Hexagon:
     def __init__(self, side_len) -> None:
         self.side_len = side_len
 

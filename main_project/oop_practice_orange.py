@@ -11,6 +11,15 @@ class Orange:
         self.mold = days * temp
 
 
+class Apple:
+    def __init__(self, weight, color, type, rot=0) -> None:
+        self.weight = weight
+        self.color = color
+        self.type = type
+        self.rot = rot
+
+
+# create Oranges
 orange1 = Orange(6, "dark orange")
 print(orange1.weight)
 print(orange1.color)
@@ -22,3 +31,9 @@ print(orange1.color, orange1.weight)
 
 orange1.rot(2, 98.0)
 print(orange1.mold)
+
+# Create Apples
+apple1 = Apple(4, "bright red", "Fuji", 0)
+apple2 = Apple(7, "dark red", "Red Delicious", 0)
+apple3 = Apple(10, "green", "Granny Smith", 0)
+apple4 = Apple(3, "yellow", "Golden Delicious", 0)
