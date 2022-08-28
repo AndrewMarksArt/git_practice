@@ -12,7 +12,8 @@ class Product:
         # there must be a price greater than 0
         assert price > 0, f"Price is {price} and must be greater than 0"
         # default for quantity is 0, must be greater than or equal to 0
-        assert quantity >= 0, f"Quantity is {quantity} and must an int be greater than or equal to 0"
+        assert quantity >= 0, f"Quantity is {quantity} "\
+            "and must an int be greater than or equal to 0"
 
         # set instance name, price, and quantity
         self.name = name
@@ -35,4 +36,5 @@ class Product:
             )
 
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__} ('{self.name}', '{self.price}', '{self.quantity}')"
+        return f"{self.__class__.__name__}" \
+            " ('{self.name}', '{self.price}', '{self.quantity}')"
